@@ -71,6 +71,6 @@ data "template_file" "user_data" {
     minecraft_server_max_players     = var.minecraft_server_max_players
     minecraft_server_hardcore_mode   = var.minecraft_server_hardcore_mode
     minecraft_server_motd            = var.minecraft_server_motd
-    minecraft_version_download_link  = var.minecraft_version_selector["1.17.1"]
+    minecraft_version_download_link  = var.minecraft_version_selector["1.18.2"]
   }
 }

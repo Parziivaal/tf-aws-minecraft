@@ -53,7 +53,7 @@ variable "instance_volume_size" {
 variable "minecraft_version_selector" {
   description = "Version of Minecraft Server files to download"
   type        = map(any)
-  default     = { "1.17.1" = "https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar" }
+  default     = { "1.18.2" = "https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar" }
 }
 
 variable "minecraft_bucket_name" {
@@ -89,7 +89,7 @@ variable "minecraft_server_rcon" {
 variable "minecraft_server_rcon_pass" {
   description = "Server Rcon Password"
   type        = string
-  default     = "please_change_me_if_using_rcon"
+  default     = "insert_password"
 }
 
 variable "minecraft_server_max_players" {

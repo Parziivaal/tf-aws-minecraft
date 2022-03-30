@@ -29,7 +29,7 @@ resource "aws_s3_bucket" "terraform_remotestate" {
   }
 
   logging {
-    target_bucket = aws_s3_bucket.tf_state_log_bucket.id
+    target_bucket = aws_s3_bucket.tf_state_log_bucket1.id
     target_prefix = "log/"
   }
 
@@ -38,8 +38,8 @@ resource "aws_s3_bucket" "terraform_remotestate" {
   }
 }
 
-resource "aws_s3_bucket" "tf_state_log_bucket" {
-  bucket = "tf-state-log-bucket"
+resource "aws_s3_bucket" "tf_state_log_bucket1" {
+  bucket = "tf-state-log-bucket1"
   acl    = "log-delivery-write"
 
   server_side_encryption_configuration {
