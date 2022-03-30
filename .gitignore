@@ -4,8 +4,10 @@
 .DS_Store
 .pem
 ahm.tfvars
-kmalkin.tfvars
 eb.tfvars
 *pem
+*pub
+*txt
+*zip
 *.ovpn
 .terraform.lock.hcl
