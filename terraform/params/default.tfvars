@@ -1,18 +1,16 @@
-aws_credentials_profile = "profile_name"
-ingress_access_cidr     = "127.0.0.1/32"
+aws_credentials_profile = ""
+ingress_access_cidr     = "146.199.195.224"
 instance_types_array = [
   {
-    instance_type     = "t2.small",
+    instance_type     = "t3.medium",
     weighted_capacity = 1,
   },
   {
-    instance_type     = "t3.small",
+    instance_type     = "t3.medium",
     weighted_capacity = 1,
   },
 
 ]
 subnet_ids = [
-  "subnet-1234125142",
-  "subnet-123416541342",
-  "subnet-123514325215"
+  "subnet-44d4a92d",
 ]

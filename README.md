@@ -60,7 +60,11 @@ asg.tf | tfsec:ignore:aws-autoscaling-enforce-http-token-imds | Upstream Module 
 
 ## Future features
  * Ability to add/remove/manage mods
+ * Add domain name for mc server
+ * SNS as code over manual configuration 
 
 # !!!! DISCLAIMER !!!!
 
  All code is currently designed to run within aws. All costs are down to the responsibility of the aws account owner. If you don't know/understand what this is deploying. Dont deploy it. There may be running costs involved with elastic ips/storage/keypairs that you as the aws account owner would be responsible for. I do not take any responsibility for costs incurred by consuming and running this project. Please make sure you understand the aws costings before using this project.
+
+ To check costings please visit https://calculator.aws/#/addService before deployment to avoid unexpected large charges, and enable sns to track spending in AWS. 

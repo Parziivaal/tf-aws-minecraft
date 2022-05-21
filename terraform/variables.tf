@@ -54,13 +54,13 @@ variable "aws_region" {
 variable "enable_on_demand" {
   description = "Determins if or not you want MC on on demand ec2 instance."
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "enable_spot_fleet" {
   description = "Determins if or not you want MC to run on spot fleet"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "ingress_access_cidr" {
@@ -77,11 +77,11 @@ variable "instance_hostname" {
 variable "instance_type" {
   description = "Requested Instance Type"
   type        = string
-  default     = "t3.small"
+  default     = "t3.medium"
 }
 
 variable "instance_types_array" {
-  description = "Requested Instance Types allows in spot fleet"
+  description = "Requested Instance Types allowed in spot fleet"
   type        = list(map(string))
 }
 
@@ -91,17 +91,10 @@ variable "instance_volume_size" {
   default     = 8
 }
 
-<<<<<<< HEAD
 variable "key_pair_name" {
   description = "Name to give the generated keypair that will be associated with the minecraft server ec2 instance for ssh access"
   type        = string
   default     = "server-keypair"
-=======
-variable "minecraft_version_selector" {
-  description = "Version of Minecraft Server files to download"
-  type        = map(any)
-  default     = { "1.18.2" = "https://launcher.mojang.com/v1/objects/a16d67e5807f57fc4e550299cf20226194497dc2/server.jar" }
->>>>>>> 70e87ae (Mc Parzival changes)
 }
 
 variable "minecraft_bucket_name" {
@@ -137,7 +130,7 @@ variable "minecraft_server_rcon" {
 variable "minecraft_server_rcon_pass" {
   description = "Server Rcon Password"
   type        = string
-  default     = "insert_password"
+  default     = "password"
 }
 
 variable "minecraft_server_max_players" {
