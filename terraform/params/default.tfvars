@@ -1,5 +1,5 @@
 aws_credentials_profile = ""
-ingress_access_cidr     = "146.199.195.224"
+ingress_access_cidr     = ""
 instance_types_array = [
   {
     instance_type     = "t3.medium",
