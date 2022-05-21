@@ -62,6 +62,7 @@ asg.tf | tfsec:ignore:aws-autoscaling-enforce-http-token-imds | Upstream Module 
  * Ability to add/remove/manage mods
  * Add domain name for mc server
  * SNS as code over manual configuration 
+ * Locate Mojang url for latest mc server versions 
 
 # !!!! DISCLAIMER !!!!
 

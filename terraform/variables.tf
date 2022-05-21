@@ -95,7 +95,6 @@ variable "key_pair_name" {
   description = "Name to give the generated keypair that will be associated with the minecraft server ec2 instance for ssh access"
   type        = string
   default     = "server-keypair"
-}
 
 variable "minecraft_bucket_name" {
   description = "Name for the bucket where world data backups are stored"
@@ -130,7 +129,7 @@ variable "minecraft_server_rcon" {
 variable "minecraft_server_rcon_pass" {
   description = "Server Rcon Password"
   type        = string
-  default     = "password"
+  default     = "insert_password"
 }
 
 variable "minecraft_server_max_players" {
