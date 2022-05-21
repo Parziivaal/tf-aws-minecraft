@@ -52,7 +52,7 @@ variable "aws_region" {
 }
 
 variable "enable_on_demand" {
-  description = "Determins if or not you want MC on on demand ec2 instance."
+  description = "Determines if or not you want MC on on demand ec2 instance."
   type        = bool
   default     = true
 }
@@ -95,6 +95,7 @@ variable "key_pair_name" {
   description = "Name to give the generated keypair that will be associated with the minecraft server ec2 instance for ssh access"
   type        = string
   default     = "server-keypair"
+}
 
 variable "minecraft_bucket_name" {
   description = "Name for the bucket where world data backups are stored"
